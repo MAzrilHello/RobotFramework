@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-03-11T09:54:25.994145" rpa="false" schemaversion="5">
+<suite id="s1" name="Unsuccessful Login" source="C:\Users\muhammad.a.bin.idris\Visual Studio Code Workspace\SauceDemo\LoginFlow\unsuccessful_login.robot">
+<test id="s1-t1" name="Unsuccessful Login" line="16">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-11T09:54:26.555179" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-03-11T09:54:26.554897" elapsed="9.587562"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-11T09:54:36.144603" level="INFO">Typing text 'standard_user' into text field 'xpath=//input[@data-test='username']'.</msg>
+<arg>xpath=//input[@data-test='username']</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-11T09:54:36.143190" elapsed="0.125495"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-11T09:54:36.269354" level="INFO">Typing text 'secretsauce' into text field 'xpath=//input[@data-test='password']'.</msg>
+<arg>xpath=//input[@data-test='password']</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-11T09:54:36.269049" elapsed="0.079359"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-03-11T09:54:36.348956" level="INFO">Clicking button 'id=login-button'.</msg>
+<arg>${LOGIN_BTN}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-11T09:54:36.348731" elapsed="0.080399"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2025-03-11T09:54:36.549006" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-03-11T09:54:36.549590" level="FAIL">InvalidSelectorException: Message: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=133.0.6943.142); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF63BC2C6A5+28789]
+	(No symbol) [0x00007FF63BB95B20]
+	(No symbol) [0x00007FF63BA28F9A]
+	(No symbol) [0x00007FF63BA309A9]
+	(No symbol) [0x00007FF63BA3376C]
+	(No symbol) [0x00007FF63BA3383F]
+	(No symbol) [0x00007FF63BA7EC00]
+	(No symbol) [0x00007FF63BA7F57C]
+	(No symbol) [0x00007FF63BAD2B47]
+	(No symbol) [0x00007FF63BAA736F]
+	(No symbol) [0x00007FF63BACF7E3]
+	(No symbol) [0x00007FF63BAA7103]
+	(No symbol) [0x00007FF63BA6FFC0]
+	(No symbol) [0x00007FF63BA71273]
+	GetHandleVerifier [0x00007FF63BF71AED+3458237]
+	GetHandleVerifier [0x00007FF63BF8829C+3550316]
+	GetHandleVerifier [0x00007FF63BF7DB9D+3507565]
+	GetHandleVerifier [0x00007FF63BCF2C6A+841274]
+	(No symbol) [0x00007FF63BBA09EF]
+	(No symbol) [0x00007FF63BB9CB34]
+	(No symbol) [0x00007FF63BB9CCD6]
+	(No symbol) [0x00007FF63BB8C119]
+	BaseThreadInitThunk [0x00007FF86354259D+29]
+	RtlUserThreadStart [0x00007FF86460AF38+40]
+</msg>
+<arg>class=${ERROR_MSG}</arg>
+<arg>Epic sadface: Username and password do not match any user in this service</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="FAIL" start="2025-03-11T09:54:36.429543" elapsed="0.165084">InvalidSelectorException: Message: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=133.0.6943.142); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF63BC2C6A5+28789]
+	(No symbol) [0x00007FF63BB95B20]
+	(No symbol) [0x00007FF63BA28F9A]
+	(No symbol) [0x00007FF63BA309A9]
+	(No symbol) [0x00007FF63BA3376C]
+	(No symbol) [0x00007FF63BA3383F]
+	(No symbol) [0x00007FF63BA7EC00]
+	(No symbol) [0x00007FF63BA7F57C]
+	(No symbol) [0x00007FF63BAD2B47]
+	(No symbol) [0x00007FF63BAA736F]
+	(No symbol) [0x00007FF63BACF7E3]
+	(No symbol) [0x00007FF63BAA7103]
+	(No symbol) [0x00007FF63BA6FFC0]
+	(No symbol) [0x00007FF63BA71273]
+	GetHandleVerifier [0x00007FF63BF71AED+3458237]
+	GetHandleVerifier [0x00007FF63BF8829C+3550316]
+	GetHandleVerifier [0x00007FF63BF7DB9D+3507565]
+	GetHandleVerifier [0x00007FF63BCF2C6A+841274]
+	(No symbol) [0x00007FF63BBA09EF]
+	(No symbol) [0x00007FF63BB9CB34]
+	(No symbol) [0x00007FF63BB9CCD6]
+	(No symbol) [0x00007FF63BB8C119]
+	BaseThreadInitThunk [0x00007FF86354259D+29]
+	RtlUserThreadStart [0x00007FF86460AF38+40]
+</status>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2025-03-11T09:54:36.595373" elapsed="0.000091"/>
+</kw>
+<status status="FAIL" start="2025-03-11T09:54:26.553972" elapsed="10.042121">InvalidSelectorException: Message: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=133.0.6943.142); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF63BC2C6A5+28789]
+	(No symbol) [0x00007FF63BB95B20]
+	(No symbol) [0x00007FF63BA28F9A]
+	(No symbol) [0x00007FF63BA309A9]
+	(No symbol) [0x00007FF63BA3376C]
+	(No symbol) [0x00007FF63BA3383F]
+	(No symbol) [0x00007FF63BA7EC00]
+	(No symbol) [0x00007FF63BA7F57C]
+	(No symbol) [0x00007FF63BAD2B47]
+	(No symbol) [0x00007FF63BAA736F]
+	(No symbol) [0x00007FF63BACF7E3]
+	(No symbol) [0x00007FF63BAA7103]
+	(No symbol) [0x00007FF63BA6FFC0]
+	(No symbol) [0x00007FF63BA71273]
+	GetHandleVerifier [0x00007FF63BF71AED+3458237]
+	GetHandleVerifier [0x00007FF63BF8829C+3550316]
+	GetHandleVerifier [0x00007FF63BF7DB9D+3507565]
+	GetHandleVerifier [0x00007FF63BCF2C6A+841274]
+	(No symbol) [0x00007FF63BBA09EF]
+	(No symbol) [0x00007FF63BB9CB34]
+	(No symbol) [0x00007FF63BB9CCD6]
+	(No symbol) [0x00007FF63BB8C119]
+	BaseThreadInitThunk [0x00007FF86354259D+29]
+	RtlUserThreadStart [0x00007FF86460AF38+40]
+</status>
+</test>
+<status status="FAIL" start="2025-03-11T09:54:25.996715" elapsed="10.603878"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Unsuccessful Login" id="s1" pass="0" fail="1" skip="0">Unsuccessful Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
